@@ -8,14 +8,17 @@
     <title>Đăng nhập</title>
 </head>
 <body>
- <form action="Login.php" metho="post">
+ <form action="Login.php" method="post">
     <h2>Đăng nhập</h2>
+        <?php if(isset($_GET['error'])){ ?>
+            <p class="error"><?php echo $_GET['error']; ?></p>
+        <?php } ?>
         <label>Tên đăng nhập</label>
-        <input type="text" name= "uname" placeholder = "Username"><br>
+        <input type="text" name= "uname" placeholder = "Tên đang nhập"><br>
         
         <label>Mật khẩu</label>
-        <input type="text" name= "password" placeholder = "Password"><br>
-        <a href="">Quên mật khẩu</a>
+        <input type="password" name= "password" placeholder = "Mật khẩu"><br>
+        <a class="qmk" href="#">Quên mật khẩu ?</a>
         <button type = "submit">Đăng nhập</button>
     </form>
 </body>
