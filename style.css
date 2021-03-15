@@ -1,11 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: serif;
     background-color: #1690A7;
     display: flex ;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 * {
     font-family: sans-serif;
@@ -17,6 +19,15 @@ form{
     padding: 30px;
     background-color: #fff;
     border-radius: 30px;
+}
+.qmk{
+    float: left;
+    color: #555;
+    font-size: 15px;
+    padding: 10px;
+}
+a:hover.qmk{
+    opacity: .7;
 }
 h2 {
     text-align: center;
@@ -48,5 +59,28 @@ button{
 button:hover{
     opacity: .7;
 }
-
+.error{
+    background: #f2dede;
+    color: #a94442;
+    padding:  10px;
+    width: 95%;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+}
+a.logout{
+    float:right;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+    text-decoration: none;
+}
+a:hover.logout{
+    opacity: .7;
+}
 
